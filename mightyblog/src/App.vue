@@ -1,28 +1,60 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="white"
+      dark
+      prominent
+      class="pa-0 d-flex justify-center"
+    >
+      <div class="d-flex justify-center pa-0 mr-10">
+        <router-link :to="{ name:'HelloWorld'}" class="black--text align-self-end mx-3">Home</router-link>
+        <router-link :to="{ name:'AboutMe'}" class="black--text align-self-end mx-3">About Me</router-link>
+        <img
+          alt="Blog Logo"
+          contain
+          src="./assets/CodingIslandIcon.png"
+          width="110"
+          height="110"
+        />
+        <router-link :to="{ name:'HelloWorld'}" class="black--text align-self-end mx-3">Posts</router-link>
+        <router-link :to="{ name:'HelloWorld'}" class="black--text align-self-end mx-3">Works</router-link>
+      </div>
+    </v-app-bar>
+
+    <v-main class="body">
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
-}
+    
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+a {
+  text-decoration:none;
+  font-family: 'Teko', sans-serif !important;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.body {
+  background-image: url('./assets/space.jpg');
+  background-size: cover;
 }
 </style>
