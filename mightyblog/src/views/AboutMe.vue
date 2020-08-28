@@ -50,10 +50,10 @@
           <h1 style="color:white; font-family: 'Teko', sans-serif; font-size: 3rem" id="skill-title" class="mb-5">Skills</h1>
           <v-container>
               <v-row v-for="(stack,index) in stacks" v-bind:key="index">
-                  <v-col cols="3" align="left">
+                  <v-col cols="2" align="left">
                       <img :src="stack.logo" >
                   </v-col>
-                  <v-col cols="9" class="align-self-center"> 
+                  <v-col cols="10" class="align-self-center"> 
                       <v-progress-linear
                       rounded
                       height="2rem"
