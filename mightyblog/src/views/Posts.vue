@@ -16,8 +16,9 @@
           </ul>
       </div>
       <div class="content-wrapper pa-4">
-          <div class="content-header text-center">글 목록</div>
-          <v-card v-for="i in 3" v-bind:key="i.id" class="mt-4 rounded-lg content">
+          <div class="content-header text-center">Articles</div>
+          <p class="text-center white--text mt-10" v-if="posts.length == 0">아직 작성된 글이 없습니다.</p>
+          <v-card v-for="i in posts" v-bind:key="i.id" class="mt-4 rounded-lg content">
               <v-card-title>{{i}} 글 제목</v-card-title>
               <v-card-text>글 내용 요약</v-card-text>
           </v-card>
@@ -31,7 +32,8 @@ export default {
     name: 'Posts',
     data(){
         return {
-            topics: ['Algorithm', 'Data Structure', 'Network', 'Problem Solving']
+            topics: ['Algorithm', 'Data Structure', 'Network', 'Problem Solving'],
+            posts:[]
         }
     },
     methods:{

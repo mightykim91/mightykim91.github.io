@@ -29,13 +29,13 @@
           class="rounded-xl text-left">
                 <div id="ssafy">
                     2020.01 - Present<br>
-                    <b>Samsung Software Academy for Youth</b>, <i>Seoul, South Korea</i>
+                    <b>삼성 청년 소프트웨어 아카데미</b>, <i>Seoul, South Korea</i>
                 </div>
                 <br>
                 <div id="college">
                     2016.09-2019.08<br>
                     <b>King's College London</b>, <i>London, United Kingdom</i><br>
-                    BEng in Electronic and Information Engineering | Grade: Second Upper Class Honours(2:1)
+                    BEng in Electronic and Information Engineering
                 </div>
                 <br>
                 <div id="highschool">
@@ -116,6 +116,8 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
 #my-photo{
     height:300px;
     width:240px;
@@ -143,5 +145,6 @@ export default {
     font-family: 'Teko', sans-serif;
     font-size: 3rem;
 }
+
 
 </style>

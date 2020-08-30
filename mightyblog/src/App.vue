@@ -12,17 +12,18 @@
         <router-link :to="{ name:'AboutMe' }" class="black--text align-self-end mx-3">About Me</router-link>
         <!-- <router-link :to="{ name:'Home' }"> -->
         <img
+          class="blog-logo"
           alt="Blog Logo"
           contain
           src="./assets/CodingIslandIcon.png"
-          width="110"
-          height="110"
+          width="110px"
+          height="110px"
           @click="toHome"
           style="cursor:pointer"
         />
         <!-- </router-link> -->
         <router-link :to="{ name:'Posts' }" class="black--text align-self-end mx-3">Posts</router-link>
-        <router-link :to="{ name:'Posts' }" class="black--text align-self-end mx-3">Works</router-link>
+        <router-link :to="{ name:'Works' }" class="black--text align-self-end mx-3">Works</router-link>
       </div>
     </v-app-bar>
 
@@ -61,7 +62,7 @@ a {
   text-decoration:none;
   font-family: 'Teko', sans-serif !important;
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 1.8vw;
 }
 
 a:hover{
@@ -72,6 +73,7 @@ a:hover{
 
 .body {
   background-image: url('./assets/space.jpg');
-  background-size: cover;
+  background-size: 100vw, 100%;
+  background-repeat:repeat-y;
 }
 </style>

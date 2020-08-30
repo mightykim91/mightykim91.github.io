@@ -25,7 +25,7 @@ Vue.use(VueRouter)
     },
     {
       path: "/works",
-      name: "works",
+      name: "Works",
       component: Works,
     },
   ];
